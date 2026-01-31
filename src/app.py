@@ -21,9 +21,7 @@ def index():
         val1 = float(request.form["val1"])
         val2 = float(request.form["val2"])
         val3 = float(request.form["val3"])
-        
-        
-        
+
         data = [[val1, val2, val3]]
         prediction = str(model.predict(data)[0])
         #pred_class = class_dict[prediction]
